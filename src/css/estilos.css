@@ -1,0 +1,168 @@
+body{
+    font-family: 'T-Automotivos', serif;
+    background-image: url(../imagens/Mercedes-V8-Desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo{
+    color: rgb(248, 232, 0);
+}
+
+.produto{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: absolute;
+
+}
+
+.produto.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.lista-produtos{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.produto .nome{
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: radial-gradient(circle, #fdfdfd, #7A94A0, #8b8e92);
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.produto .estrela{
+    width: 20px;
+    height: 20px;
+    background-image: url(../imagens/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    
+}
+.produto .nivel-produto{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.produto .imagem-produto{
+    max-width: 270px;
+    align-self: center;
+    border-radius: 3px;    
+}
+
+.produto .informacoes{
+    background-color: #8aabbe;
+    border-radius: 5px;
+    max-width: 300px;
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, #fdfdfd, #7a94a0, #8b8e92);
+    border: 2px solid #12203a;
+    text-align:left;
+    line-height: 1.5;
+    padding: 5px;
+}
+.produto .informacoes .informacoes-brilho{
+display: flex;
+justify-content:center;
+gap: 5px;
+padding: 10px;
+
+}
+.produto .informacoes .informacoes-brilho span{
+    font-size: 13px;
+}
+.produto .informacoes .descricao{
+    border-bottom:1px solid #000000;
+    padding:  10px;
+    max-height: 95px;
+    overflow-y: scroll;
+    font-size: 13px;
+}
+
+.fundo-1{
+    background: url(../imagens/fundo-blends.jpg) no-repeat;
+}
+
+.fundo-2{
+    background: url(../imagens/fundo-blends.jpg)no-repeat;
+}
+.fundo-3{
+    background: url(../imagens/fundo-blends.jpg)no-repeat;
+}
+
+.fundo-4{
+    background: url(../imagens/fundo-revox.jpg)no-repeat;
+}
+
+.fundo-5{
+    background: url(../imagens/fundo-shiny.jpg)no-repeat;
+}
+
+.fundo-6{
+    background: url(../imagens/fundo-v-floc.jpg)no-repeat;
+}
+
+.fundo-7{
+    background: url(../imagens/fundo-v-mol.jpg)no-repeat;
+}
+.btn-seta{
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-colo 0.2s ease-in-out;
+    box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn-seta.btn-voltar{
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover{
+    background-color: rgb(128, 124, 90);
+}
+body::-webkit-scrollbar-track{
+    background-color: #5fa9cc;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #5fa9cc;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #5fa9cc;
+}
